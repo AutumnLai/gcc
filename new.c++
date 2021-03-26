@@ -78,15 +78,7 @@ int main() {
 	rFile.close();
 	cout << "how you want to cut (please input int\n";
 	cin >> piece;
-	pid_t pid[piece];
-	if( pid ==0){
-		int i = 0;
-		while(pid[i]==0&&i<piece)
-		pid[i]=fork();
-	}
-	else if( pid >0){
-		;
-	}
+
 	for(int i = 1;i<= piece;i++){
 		int breakPoint = (input.size()/piece)*i;
 		
@@ -118,11 +110,11 @@ int main() {
 	}
 	  
 
-	time_t start, end,result;
-	start= time(NULL);
-	end = time(NULL);
-	result = end -start;
-	printf("time%f", result);
+	//time_t start, end,result;
+	//start= time(NULL);
+	//end = time(NULL);
+	//result = end -start;
+	//printf("time%f", result);
 
 
 
